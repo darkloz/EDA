@@ -1,0 +1,27 @@
+#include"lista.h"
+
+Pila::Pila( int mx_sz  ):mx_size( mx_sz ){}
+int pila::pop(){
+  spin_mutex::scoped_lock lock;
+  lock.acquire( op_pop );
+  if( cola.size() > 0 ){
+    int t = cola.front();
+    cola.pop();
+    return t;
+  }
+  lock.release();
+}
+void Pila::push(){
+  spin_mutex::scoped_lock lock ;
+  lock.acquire( op );
+  
+  lock.release();
+}
+int Pila::front(){
+  spin_mutex::scoped_lock lock ;
+  lock.acquire( op );
+  if( cola.size() > 0 )
+    return cola.front();
+  lock.release();
+}
+
