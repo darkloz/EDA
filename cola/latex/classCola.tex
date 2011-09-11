@@ -1,0 +1,105 @@
+\hypertarget{classCola}{
+\section{\-Referencia de la \-Clase \-Cola}
+\label{classCola}\index{\-Cola@{\-Cola}}
+}
+
+
+\hyperlink{classCola}{\-Cola} concurrente.  
+
+
+
+
+{\ttfamily \#include $<$cola.\-h$>$}
+
+\subsection*{\-Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCola_a47dd60bd45a0d7e7d63e0ed1df7242d6}{\-Cola} (int mx\-\_\-sz)
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+int \hyperlink{classCola_afa3f9050ac056af3c1684b09e0f5b3fd}{pop} ()
+\begin{DoxyCompactList}\small\item\em \-Borrado. \end{DoxyCompactList}\item 
+void \hyperlink{classCola_ac0fc2612f76c97cd8a1e474b1030f7b5}{push} (int v)
+\begin{DoxyCompactList}\small\item\em \-Inserción. \end{DoxyCompactList}\item 
+int \hyperlink{classCola_a120a39d6fcf73a0d9c3049c9288abb61}{front} ()
+\begin{DoxyCompactList}\small\item\em \-Consulta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Descripción detallada}
+\hyperlink{classCola}{\-Cola} concurrente. 
+
+\-Esta cola ha sido desarrollada para poder soportar concurrencia es decir muchas threads pueden acceder a ella simultaneamente y realizar las operaciones de insercion borrado y consulta.
+
+\-Se utiliza como base la cola de la stl. 
+
+\subsection{\-Documentación del constructor y destructor}
+\hypertarget{classCola_a47dd60bd45a0d7e7d63e0ed1df7242d6}{
+\index{\-Cola@{\-Cola}!\-Cola@{\-Cola}}
+\index{\-Cola@{\-Cola}!Cola@{\-Cola}}
+\subsubsection[{\-Cola}]{\setlength{\rightskip}{0pt plus 5cm}\-Cola\-::\-Cola (
+\begin{DoxyParamCaption}
+\item[{int}]{mx\-\_\-sz}
+\end{DoxyParamCaption}
+)}}
+\label{classCola_a47dd60bd45a0d7e7d63e0ed1df7242d6}
+
+
+\-Constructor. 
+
+
+\begin{DoxyParams}{\-Parámetros}
+{\em mx\-\_\-sz} & \-Representa el tamaño máximo que tendrá la cola\\
+\hline
+\end{DoxyParams}
+\-Se inicializa la cola vacía. 
+
+\subsection{\-Documentación de las funciones miembro}
+\hypertarget{classCola_a120a39d6fcf73a0d9c3049c9288abb61}{
+\index{\-Cola@{\-Cola}!front@{front}}
+\index{front@{front}!Cola@{\-Cola}}
+\subsubsection[{front}]{\setlength{\rightskip}{0pt plus 5cm}int \-Cola\-::front (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCola_a120a39d6fcf73a0d9c3049c9288abb61}
+
+
+\-Consulta. 
+
+\-Extrae el primer elemento en la cola \hypertarget{classCola_afa3f9050ac056af3c1684b09e0f5b3fd}{
+\index{\-Cola@{\-Cola}!pop@{pop}}
+\index{pop@{pop}!Cola@{\-Cola}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int \-Cola\-::pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCola_afa3f9050ac056af3c1684b09e0f5b3fd}
+
+
+\-Borrado. 
+
+\-Elima el ultimo elemento ingresado \hypertarget{classCola_ac0fc2612f76c97cd8a1e474b1030f7b5}{
+\index{\-Cola@{\-Cola}!push@{push}}
+\index{push@{push}!Cola@{\-Cola}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void \-Cola\-::push (
+\begin{DoxyParamCaption}
+\item[{int}]{v}
+\end{DoxyParamCaption}
+)}}
+\label{classCola_ac0fc2612f76c97cd8a1e474b1030f7b5}
+
+
+\-Inserción. 
+
+\-Inserta el elemento al final de la cola 
+\begin{DoxyParams}{\-Parámetros}
+{\em v} & \-Elemento a ser insertado \\
+\hline
+\end{DoxyParams}
+
+
+\-La documentación para esta clase fue generada a partir de los siguientes ficheros\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{cola_8h}{cola.\-h}\item 
+\hyperlink{cola_8cpp}{cola.\-cpp}\end{DoxyCompactItemize}
