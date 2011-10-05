@@ -1,0 +1,165 @@
+\hypertarget{classPtr}{
+\section{\-Referencia de la plantilla de la \-Clase \-Ptr$<$ \-T $>$}
+\label{classPtr}\index{\-Ptr$<$ T $>$@{\-Ptr$<$ T $>$}}
+}
+
+
+\-Smart \-Pointer.  
+
+
+
+
+{\ttfamily \#include $<$\-Pointer.\-h$>$}
+
+\subsection*{\-Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPtr_ad0494ebf61bd0b8f8edefdb1e44951d5}{\-Ptr} ()
+\item 
+\hyperlink{classPtr_a38747081c8acd37350efa0fd636ea84f}{\-Ptr} (\-T $\ast$ptr)
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+\-T $\ast$ \hyperlink{classPtr_ab3d840c6f6a9fd7ae85e1dcd9e33c6ff}{operator=} (\-T $\ast$ptr)
+\begin{DoxyCompactList}\small\item\em \-Constructor con puntero. \end{DoxyCompactList}\item 
+\hyperlink{classPtr}{\-Ptr} \& \hyperlink{classPtr_ae6fd0aba0b36ccba7e3c3bb7d02d24fe}{operator=} (\hyperlink{classPtr}{\-Ptr} \&ptr)
+\begin{DoxyCompactList}\small\item\em \-Asignacion puntero. \end{DoxyCompactList}\item 
+\-T \& \hyperlink{classPtr_a2c1e44bcaf7292e77d27cb0078113531}{operator\mbox{[}$\,$\mbox{]}} (unsigned int i)
+\item 
+\-T \& \hyperlink{classPtr_a11f526dc803d2720ece6498bc74bee40}{operator$\ast$} ()
+\item 
+\-T $\ast$ \hyperlink{classPtr_aeee91b1dbe1a2218b163222eec8b8c33}{operator-\/$>$} ()
+\item 
+void \hyperlink{classPtr_ab29f310db82249feaea036e359e81891}{referece} (\-T \&a)
+\item 
+\hyperlink{classPtr_a1abc73b5113c9dd340fbae70f479d2ef}{$\sim$\-Ptr} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Descripción detallada}
+\subsubsection*{template$<$class T$>$class Ptr$<$ T $>$}
+
+\-Smart \-Pointer. 
+
+\-Esta clase encapsula el comportamiento de un puntero cualquiera con ello no hay que preocuparse de liberar memoria ya que inteligentemente este objeto se encarga de realizarlo por el cliente y de forma muy eficiente, por ello el cliente puede obviar las cuestiones de complejidad extra del programa. \-Es importante tener en cuenta que si se enplea esta libreria no se haga uso de punteros nativos de c++ para evitar comportamientos indeseados. 
+
+\subsection{\-Documentación del constructor y destructor}
+\hypertarget{classPtr_ad0494ebf61bd0b8f8edefdb1e44951d5}{
+\index{\-Ptr@{\-Ptr}!\-Ptr@{\-Ptr}}
+\index{\-Ptr@{\-Ptr}!Ptr@{\-Ptr}}
+\subsubsection[{\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf \-Ptr}$<$ \-T $>$\-::{\bf \-Ptr} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPtr_ad0494ebf61bd0b8f8edefdb1e44951d5}
+\hypertarget{classPtr_a38747081c8acd37350efa0fd636ea84f}{
+\index{\-Ptr@{\-Ptr}!\-Ptr@{\-Ptr}}
+\index{\-Ptr@{\-Ptr}!Ptr@{\-Ptr}}
+\subsubsection[{\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf \-Ptr}$<$ \-T $>$\-::{\bf \-Ptr} (
+\begin{DoxyParamCaption}
+\item[{\-T $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}}
+\label{classPtr_a38747081c8acd37350efa0fd636ea84f}
+
+
+\-Constructor. 
+
+
+\begin{DoxyParams}{\-Parámetros}
+{\em ptr} & \-El puntero el cual va a ser encapsulado por la clase \-Podría tenerse asignaciones del tipo \-Ptr$<$\-T$>$ p( new \-T() ); \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPtr_a1abc73b5113c9dd340fbae70f479d2ef}{
+\index{\-Ptr@{\-Ptr}!$\sim$\-Ptr@{$\sim$\-Ptr}}
+\index{$\sim$\-Ptr@{$\sim$\-Ptr}!Ptr@{\-Ptr}}
+\subsubsection[{$\sim$\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf \-Ptr}$<$ \-T $>$\-::$\sim${\bf \-Ptr} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPtr_a1abc73b5113c9dd340fbae70f479d2ef}
+
+
+\subsection{\-Documentación de las funciones miembro}
+\hypertarget{classPtr_a11f526dc803d2720ece6498bc74bee40}{
+\index{\-Ptr@{\-Ptr}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Ptr@{\-Ptr}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ \-T \& {\bf \-Ptr}$<$ \-T $>$\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPtr_a11f526dc803d2720ece6498bc74bee40}
+\-Retorna el objeto al que hace referencia \hypertarget{classPtr_aeee91b1dbe1a2218b163222eec8b8c33}{
+\index{\-Ptr@{\-Ptr}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!Ptr@{\-Ptr}}
+\subsubsection[{operator-\/$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ \-T $\ast$ {\bf \-Ptr}$<$ \-T $>$\-::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classPtr_aeee91b1dbe1a2218b163222eec8b8c33}
+\-Accede a los metodos del objeto referenciado \hypertarget{classPtr_ab3d840c6f6a9fd7ae85e1dcd9e33c6ff}{
+\index{\-Ptr@{\-Ptr}!operator=@{operator=}}
+\index{operator=@{operator=}!Ptr@{\-Ptr}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ \-T $\ast$ {\bf \-Ptr}$<$ \-T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{\-T $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}}
+\label{classPtr_ab3d840c6f6a9fd7ae85e1dcd9e33c6ff}
+
+
+\-Constructor con puntero. 
+
+
+\begin{DoxyParams}{\-Parámetros}
+{\em ptr} & \-El puntero el cual va a ser encapsulado por la clase \-Podría tenerse asignaciones del tipo \-Ptr$<$\-T$>$ p = new \-T(); \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPtr_ae6fd0aba0b36ccba7e3c3bb7d02d24fe}{
+\index{\-Ptr@{\-Ptr}!operator=@{operator=}}
+\index{operator=@{operator=}!Ptr@{\-Ptr}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf \-Ptr}$<$ \-T $>$ \& {\bf \-Ptr}$<$ \-T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Ptr}$<$ \-T $>$ \&}]{ptr}
+\end{DoxyParamCaption}
+)}}
+\label{classPtr_ae6fd0aba0b36ccba7e3c3bb7d02d24fe}
+
+
+\-Asignacion puntero. 
+
+
+\begin{DoxyParams}{\-Parámetros}
+{\em ptr} & \-Es el objeto cuya referencia será copiada en el objeto de asignacion \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPtr_a2c1e44bcaf7292e77d27cb0078113531}{
+\index{\-Ptr@{\-Ptr}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Ptr@{\-Ptr}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ \-T \& {\bf \-Ptr}$<$ \-T $>$\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{i}
+\end{DoxyParamCaption}
+)}}
+\label{classPtr_a2c1e44bcaf7292e77d27cb0078113531}
+
+\begin{DoxyParams}{\-Parámetros}
+{\em i} & \-Posicion del elemento de un array al que se desea acceder \-Retorna el i-\/ésimo elemento de un arreglo en caso se trate de un puntero que referencia a un array \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPtr_ab29f310db82249feaea036e359e81891}{
+\index{\-Ptr@{\-Ptr}!referece@{referece}}
+\index{referece@{referece}!Ptr@{\-Ptr}}
+\subsubsection[{referece}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf \-Ptr}$<$ \-T $>$\-::referece (
+\begin{DoxyParamCaption}
+\item[{\-T \&}]{a}
+\end{DoxyParamCaption}
+)}}
+\label{classPtr_ab29f310db82249feaea036e359e81891}
+\-Referencia a variable \-Permite realizar las referencias a objetos, del mismo modo que lo haria un puntero nativo al asignarle un valor de la forma\-: \&variable 
+
+\-La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Pointer_8h}{\-Pointer.\-h}\end{DoxyCompactItemize}
