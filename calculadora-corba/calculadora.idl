@@ -1,0 +1,12 @@
+module CalculadoraApp
+{
+  interface Calculadora
+  {
+    double suma( in double a, in double b);
+    double resta( in double a, in double b);
+    double multiplicacion(in double a, in double b);
+    double division( in double a, in double b);
+
+  };
+};
+
